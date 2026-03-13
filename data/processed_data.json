@@ -1,0 +1,19 @@
+[
+  {
+    "source": "weather",
+    "temperature": 6.6,
+    "windspeed": 11.2,
+    "time": "2026-03-13T19:30"
+  },
+  {
+    "source": "currency",
+    "base": null,
+    "rates_count": 166
+  },
+  {
+    "source": "country",
+    "name": "United Kingdom",
+    "capital": "London",
+    "population": 69281437
+  }
+]
