@@ -11,6 +11,7 @@ from app.services.normalize import (
 from app.services.validate import validate_record
 from app.services.storage import store_record
 from app.utils.logger import logger
+from app.services.health import get_health_status
 
 
 def process_data(raw_data, normalizer):
@@ -24,6 +25,8 @@ def process_data(raw_data, normalizer):
 
 
 def main():
+    health_status = get_health_status()
+    logger.info(f"Health check passed: {health_status}")
     logger.info("API Ingestion Pipeline Started")
 
     weather_data = fetch_weather(51.5074, -0.1278)
